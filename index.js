@@ -9,8 +9,16 @@ function myDisplayer(something) {
   
   myCalculator(5, 5, myDisplayer);
 
-  setTimeout(myFunction, 3000);
+  setInterval(myFunction, 3000);
 
   function myFunction(){
     console.log("I Love You!!!");
+  }
+
+
+  setTimeout(function(){
+    myFunction("I Heat You!!!");
+  }, 3000);
+  function myFunction(value){
+    console.log(value);
   }
